@@ -12,9 +12,16 @@
   <body>
     <div id="root"></div>
     <script type="text/babel">
+    
+      function MyDialogue () {
+        function handleButtonClick () {
+          window.alert("Howdy ma'am");
+        }
+        return <button onClick={handleButtonClick}>Hello dear</button>;
+      }
 
       ReactDOM.render(
-        <h1>Hello, world!</h1>,
+        <MyDialogue />,
         document.getElementById('root')
       );
 

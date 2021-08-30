@@ -13,15 +13,19 @@
     <div id="root"></div>
     <script type="text/babel">
     
-      function MyDialogue () {
+      function MyUserInterface () {
         function handleButtonClick () {
           window.alert("Howdy ma'am");
         }
-        return <button onClick={handleButtonClick}>Hello dear</button>;
+        return (
+          <button onClick={handleButtonClick}>
+            Hello dear
+          </button>
+        );
       }
 
       ReactDOM.render(
-        <MyDialogue />,
+        <MyUserInterface />,
         document.getElementById('root')
       );
 
